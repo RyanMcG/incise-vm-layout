@@ -1,4 +1,4 @@
-(ns incise.layouts.impl.ryanmcg
+(ns incise.layouts.impl.vm
   (:require (incise.layouts [utils :refer [repartial use-layout
                                            deflayout defpartial]]
                             [core :refer [register]])
@@ -91,7 +91,7 @@
                             (link-to-asset "stylesheets/ryanmcg.css.stefon")])
 (defpartial javascripts [] [(link-to-asset "javascripts/app.js.stefon")])
 
-(deflayout ryanmcg []
+(deflayout vm []
   (repartial base-layout/javascripts javascripts)
   (repartial base-layout/stylesheets stylesheets)
   (repartial base-layout/head
@@ -102,4 +102,4 @@
   (repartial page-layout/header header)
   (use-layout page-layout/page))
 
-(register [:ryanmcg] ryanmcg)
+(register [:vm] vm)

@@ -2,7 +2,7 @@
  :author "Ryan V McGowan"
  :in-dir "resources/content"
  :out-dir "resources/public"
- :stefon {:precompiles ["javascripts/app.js.stefon"
+ :stefon {:precompiles ["javascripts/vm.js.stefon"
                         "stylesheets/vm.css.stefon"
                         "stylesheets/ryanmcg.css.stefon"]}
  :parse-defaults {:layout :vm}

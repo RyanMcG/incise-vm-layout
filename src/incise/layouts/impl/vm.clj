@@ -87,9 +87,8 @@
 
 (defpartial stylesheets [] ["//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css"
                             "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-                            (link-to-asset "stylesheets/vm.css.stefon")
-                            (link-to-asset "stylesheets/ryanmcg.css.stefon")])
-(defpartial javascripts [] [(link-to-asset "javascripts/app.js.stefon")])
+                            (link-to-asset "vm/stylesheets/vm.css.stefon")])
+(defpartial javascripts [] [(link-to-asset "vm/javascripts/vm.js.stefon")])
 
 (deflayout vm []
   (repartial base-layout/javascripts javascripts)

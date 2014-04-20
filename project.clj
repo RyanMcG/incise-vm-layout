@@ -1,4 +1,4 @@
-(defproject com.ryanmcg/incise-vm-layout "0.3.0"
+(defproject com.ryanmcg/incise-vm-layout "0.4.0"
   :description "The base layout I use for my personal website."
   :url "https://github.com/RyanMcG/ryanmcg.github.io"
   :license {:name "Creative Commons Attribution-ShareAlike 3.0 Unported License"

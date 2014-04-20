@@ -1,4 +1,4 @@
-# invise-vm-layout
+# incise-vm-layout
 
 An [incise][] layout shared by some of my personal sites.
 

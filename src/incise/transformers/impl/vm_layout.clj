@@ -1,15 +1,13 @@
-(ns incise.layouts.impl.vm
-  (:require (incise.layouts [utils :refer [repartial use-layout
-                                           deflayout defpartial]]
-                            [core :refer [register]])
+(ns incise.transformers.impl.vm-layout
+  (:require (incise.transformers [layout :refer [repartial use-layout
+                                                 deflayout defpartial]]
+                                 [core :refer [register]])
             [robert.hooke :refer [add-hook]]
-            (incise.layouts.impl [page :as page-layout]
-                                 [base :as base-layout])
+            (incise.transformers.impl [page-layout :as page-layout]
+                                      [base-layout :as base-layout])
             [stefon.core :refer [link-to-asset]]
-            (hiccup [def :refer :all]
-                    [util :refer [to-uri]]
-                    [page :refer [include-js]]
-                    [element :refer :all])))
+            (hiccup [element :refer :all]
+                    [util :refer [to-uri]])))
 
 (def analytics-code
   "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -45,4 +43,4 @@
   (repartial page-layout/header header)
   (use-layout page-layout/page))
 
-(register [:vm] vm)
+(register :vm-layout vm)

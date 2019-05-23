@@ -26,8 +26,7 @@
 
 (defpartial header [] "")
 
-(defpartial stylesheets [] ["//yui.yahooapis.com/pure/0.5.0-rc-1/pure-min.css"
-                            "//yui.yahooapis.com/pure/0.5.0-rc-1/grids-responsive-min.css"
+(defpartial stylesheets [] ["https://unpkg.com/purecss@1.0.0/build/pure-min.css"
                             "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
                             (link-to-asset "vm/stylesheets/vm.css.stefon")])
 (defpartial javascripts [] [(link-to-asset "vm/javascripts/vm.js.stefon")])
